@@ -1,40 +1,58 @@
-# Automated-Network-Reconnaissance-Toolkit-Python-
-🛠️ Automated Network Reconnaissance Toolkit
+# 🛠️ Automated Network Reconnaissance Toolkit
 
-A Python-based network reconnaissance tool that automates port scanning, banner grabbing, and advanced Nmap scanning in a lab environment.
+A Python-based network reconnaissance tool that automates **port scanning, banner grabbing, and advanced Nmap scanning**.
 
-This project is designed for beginners in network pentesting to understand how reconnaissance works under the hood and how tools like Nmap operate.
+This project is designed for beginners in network pentesting to understand how reconnaissance works and how tools like Nmap operate internally.
 
-🚀 Features
-🔍 Custom Port Scanning
-Scan specific ports (e.g., 22,80,443)
-Top 1000 ports
-Full range (1–65535)
-⚡ Multi-threaded scanning (faster results)
-🏁 Scan Types
--sT → TCP Connect Scan
--sS → SYN Scan (requires sudo)
-⏱️ Timing Control
--T 0–5 (like Nmap timing templates)
-🧠 Banner Grabbing
-Identifies running services on open ports
-🔬 Advanced Scanning via Nmap
-Service detection (-sV)
-OS detection (-O)
-📁 Output saving
-Stores results in a file
-📂 Project Structure
+---
+
+## 🚀 Features
+
+- 🔍 Custom Port Scanning
+  - Scan specific ports (e.g., 22,80,443)
+  - Top 1000 ports
+  - Full range (1–65535)
+
+- ⚡ Multi-threaded scanning (faster execution)
+
+- 🏁 Scan Types
+  - `-sT` → TCP Connect Scan
+  - `-sS` → SYN Scan (requires sudo)
+
+- ⏱️ Timing Control
+  - `-T 0–5` (similar to Nmap timing templates)
+
+- 🧠 Banner Grabbing
+  - Identifies services running on open ports
+
+- 🔬 Advanced Scanning (via Nmap)
+  - Service detection (`-sV`)
+  - OS detection (`-O`)
+
+- 📁 Output Saving
+  - Saves results into a file
+
+---
+
+## 📂 Project Structure
+
+
 network-recon-toolkit/
 │── recon.py
 │── results.txt
 │── README.md
-⚙️ Requirements
-Python 3.x
-Kali Linux (recommended)
-Nmap installed
+
+
+---
+
+## ⚙️ Requirements
+
+- Python 3.x  
+- Kali Linux (recommended)  
+- Nmap installed  
 
 Install Nmap:
-
+```bash
 sudo apt install nmap
 ▶️ Usage
 🔹 Basic Scan
@@ -83,9 +101,6 @@ Port 80: Apache httpd
 
 [+] Results saved to results.txt
 🧠 Learning Objectives
-
-This project helped in understanding:
-
 Socket programming in Python
 Multi-threading for performance
 Network scanning techniques
